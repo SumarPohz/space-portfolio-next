@@ -269,25 +269,25 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "AI-Powered Resume Builder Platform",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
+      'SmrAI-Studio is an AI-driven resume building platform that helps users create modern, job-ready resumes in minutes. It offers multiple professional templates, real-time preview, A4-optimized downloads, and secure paid resume exports with Razorpay integration.',
     image: "/projects/project-1.png",
-    link: "https://example.com",
+    link: "https://smrai-studio.onrender.com/",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "Car Rental Website for North-East India",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
+      'TravCab is a responsive car rental website designed for North-East India, enabling users to browse available vehicles, compare prices, and instantly enquire or book via WhatsApp. The platform focuses on simplicity, mobile-first design, and local travel needs.',
     image: "/projects/project-2.png",
-    link: "https://example.com",
+    link: "https://ddtravels.in/travcab/",
   },
   {
-    title: "Space Themed Website",
+    title: "Developer Portfolio & Project Showcase",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
+      'A modern, interactive personal portfolio showcasing full-stack web development and AI-powered projects. It highlights skills, featured projects, source code links, and real-world applications with a visually engaging UI and smooth animations.',
     image: "/projects/project-3.png",
-    link: "https://example.com",
+    link: "https://github.com/SumarPohz/space-portfolio-next",
   },
 ] as const;
 
