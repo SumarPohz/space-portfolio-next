@@ -15,7 +15,7 @@ export const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-20 mt-32 md:mt-40 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         {/* Top badge */}
@@ -53,7 +53,7 @@ export const HeroContent = () => {
         >
           I’m a Full Stack Developer focused on building production-ready
           applications, scalable backends, and SaaS products like{" "}
-          <span className="text-purple-400 font-medium">ResuCV</span>.
+          <span className="text-purple-400 font-medium"><a target="_blank" href="https://smrai-studio.onrender.com/">ResuCV</a></span>.
         </motion.p>
 
         {/* CTA */}

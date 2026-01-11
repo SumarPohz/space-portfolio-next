@@ -3,13 +3,13 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-  "dev": "next dev",
-  "build": "cross-env NEXT_DISABLE_TURBOPACK=1 next build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d out",
-  "start": "next start",
-  "lint": "next lint"
-},
+    "dev": "next dev",
+    "build": "cross-env NEXT_DISABLE_TURBOPACK=1 next build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "author": {
     "name": "Sumar Pohz",
     "email": "sumarpohz@gmail.com",
@@ -33,6 +33,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@heroicons/react": "^2.1.1",
     "@react-three/drei": "^9.92.7",
     "@react-three/fiber": "^8.15.19",
