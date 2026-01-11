@@ -37,7 +37,7 @@ export const HeroContent = () => {
           <span>
             Hi, I&apos;m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Sumar
+              Sumarbha Pohsnem
             </span>
             .
           </span>
@@ -59,7 +59,7 @@ export const HeroContent = () => {
         {/* CTA */}
         <motion.a
           variants={slideInFromLeft(1)}
-          href="https://resucv.sumarpohz.com/"
+          href="https://smrai-studio.onrender.com/"
           target="_blank"
           className="py-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[220px]"
         >

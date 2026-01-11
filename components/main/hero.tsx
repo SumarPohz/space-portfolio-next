@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import { HeroContent } from "@/components/sub/hero-content";
 
-// 👇 dynamically load Three.js canvas (NO SSR)
+// dynamically load Three.js canvas (NO SSR)
 const StarsCanvas = dynamic(
   () =>
     import("@/components/main/star-background").then(
@@ -26,11 +26,8 @@ export const Hero = () => {
         playsInline
         className="rotate-180 absolute top-[-340px] left-0 w-full h-full object-cover -z-20"
       >
-        {/* IMPORTANT: GitHub Pages basePath */}
-        <source
-          src="/space-portfolio/videos/blackhole.webm"
-          type="video/webm"
-        />
+        {/* ✅ DO NOT hardcode basePath */}
+        <source src="/videos/blackhole.webm" type="video/webm" />
       </video>
 
       {/* 🧠 Hero content */}

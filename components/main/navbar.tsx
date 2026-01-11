@@ -18,14 +18,14 @@ export const Navbar = () => {
           className="flex items-center"
         >
           <Image
-            src="/space-portfolio/logo.png"
+            src="/logo.png"
             alt="Logo"
             width={70}
             height={70}
             draggable={false}
             className="cursor-pointer"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">Sumar Pohz</div>
+          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300"><b>Sumar Pohz</b></div>
         </Link>
 
         {/* Web Navbar */}
@@ -35,7 +35,7 @@ export const Navbar = () => {
               <a
                 key={link.title}
                 href={link.link}
-                className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-center"
+                className="cursor-pointer hover:text-[rgb(252,244,1)] transition text-center"
               >
                 {link.title}
               </a>
@@ -48,7 +48,13 @@ export const Navbar = () => {
                 ResuCV
               </Link>
             {/* Source Code */}
-            <Link href="#">Source Code</Link>
+            <Link
+              href="https://github.com/SumarPohz/space-portfolio-next"
+              target="_blank"
+              className="cursor-pointer hover:text-[rgb(252,248,4)] transition text-center"
+            >
+              Source Code
+            </Link>
           </div>
         </div>
 
@@ -84,7 +90,7 @@ export const Navbar = () => {
               <a
                 key={link.title}
                 href={link.link}
-                className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
+                className="cursor-pointer hover:text-[rgb(235,252,3)] transition"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.title}
@@ -98,9 +104,15 @@ export const Navbar = () => {
             >
               ResuCV
             </Link>
-            <Link href="#">Source Code</Link>
+            <Link
+              href="https://github.com/SumarPohz/space-portfolio-next"
+              target="_blank"
+              className="cursor-pointer hover:text-[rgb(225,250,2)] transition"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Source Code
+            </Link>
           </div>
-
           {/* Social Icons */}
           <div className="flex justify-center gap-6 mt-6">
             {SOCIALS.map(({ link, name, icon: Icon }) => (
