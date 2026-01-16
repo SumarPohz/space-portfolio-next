@@ -56,15 +56,42 @@ export const HeroContent = () => {
           <span className="text-purple-400 font-medium"><a target="_blank" href="https://smrai-studio.onrender.com/">ResuCV</a></span>.
         </motion.p>
 
-        {/* CTA */}
-        <motion.a
+        {/* CTA + Play Store */}
+        <motion.div
           variants={slideInFromLeft(1)}
-          href="https://smrai-studio.onrender.com/"
-          target="_blank"
-          className="py-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[220px]"
+          className="flex flex-col gap-3"
         >
-          Build Resume with ResuCV
-        </motion.a>
+          {/* Actions row */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            {/* Primary CTA */}
+            <a
+              href="https://smrai-studio.onrender.com/"
+              target="_blank"
+              className="h-[56px] px-6 button-primary flex items-center justify-center text-white cursor-pointer rounded-lg text-sm font-medium"
+            >
+              Build Resume with ResuCV
+            </a>
+
+            {/* Play Store Badge */}
+            <a
+              href="https://play.google.com/store/apps/details?id=com.smrai.studio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group h-[56px] flex items-center"
+            >
+              {/* Glow */}
+              <span className="absolute -inset-1 rounded-xl bg-gradient-to-r from-purple-500 to-cyan-500 blur opacity-40 group-hover:opacity-70 transition duration-300"></span>
+
+              <Image
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                alt="Get it on Google Play"
+                width={180}
+                height={56}
+                className="relative z-10 h-[56px] w-auto object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
+              />
+            </a>
+          </div>
+        </motion.div>
       </div>
 
       {/* Right image */}
