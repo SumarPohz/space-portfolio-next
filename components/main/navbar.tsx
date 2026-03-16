@@ -41,11 +41,11 @@ export const Navbar = () => {
               </a>
             ))}
             <Link
-                href="https://smrai-studio.onrender.com/"
+                href="https://smraistudio.sumarpohz.com/"
                 target="_blank"
                 className="ml-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-sm font-medium hover:opacity-90 transition"
               >
-                ResuCV
+                SmrAI Studio
               </Link>
             {/* Source Code */}
             <Link
@@ -97,7 +97,7 @@ export const Navbar = () => {
               </a>
             ))}
             <Link
-              href="https://smrai-studio.onrender.com/"
+              href="https://smraistudio.sumarpohz.com/"
               target="_blank"
               className="px-4 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-center font-medium"
               onClick={() => setIsMobileMenuOpen(false)}

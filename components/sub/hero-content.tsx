@@ -48,12 +48,23 @@ export const HeroContent = () => {
 
         {/* Sub text */}
         <motion.p
-          variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
-        >
-          I’m a Full Stack Developer focused on building production-ready
-          applications, scalable backends, and SaaS products like{" "}
-          <span className="text-purple-400 font-medium"><a target="_blank" href="https://smrai-studio.onrender.com/">ResuCV</a></span>.
+            variants={slideInFromLeft(0.8)}
+            className="text-lg text-gray-400 my-5 max-w-[600px]"
+          >
+            I’m a Full Stack Developer building AI-powered tools that solve real problems. Focused on building production-ready
+            applications, scalable backends, and AI-powered SaaS platforms like{" "}
+            <span className="text-purple-400 font-medium">
+              <a target="_blank" href="https://smraistudio.sumarpohz.com/">SmrAI Studio</a>
+            </span>
+            — a platform with tools for:
+            <br />
+            • Resume Builder  
+            <br />
+            • AI Photo Editing  
+            <br />
+            • Background Removal  
+            <br />
+            • Application & Letter Generator
         </motion.p>
 
         {/* CTA + Play Store */}
@@ -65,11 +76,11 @@ export const HeroContent = () => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             {/* Primary CTA */}
             <a
-              href="https://smrai-studio.onrender.com/"
+              href="https://smraistudio.sumarpohz.com/"
               target="_blank"
               className="h-[56px] px-6 button-primary flex items-center justify-center text-white cursor-pointer rounded-lg text-sm font-medium"
             >
-              Build Resume with ResuCV
+              Try SmrAI Studio
             </a>
 
             {/* Play Store Badge */}
@@ -91,6 +102,10 @@ export const HeroContent = () => {
               />
             </a>
           </div>
+
+          <p className="text-sm text-gray-400 mt-2">
+            Resume Builder • AI Photo Editor • Background Remover • Letter Generator
+          </p>
         </motion.div>
       </div>
 
