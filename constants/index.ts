@@ -273,7 +273,7 @@ export const PROJECTS = [
     description:
       'SmrAI-Studio is an AI-driven resume building platform that helps users create modern, job-ready resumes in minutes. It offers multiple professional templates, real-time preview, A4-optimized downloads, and secure paid resume exports with Razorpay integration.',
     image: "/projects/project-1.png",
-    link: "https://smrai-studio.onrender.com/",
+    link: "https://smraistudio.sumarpohz.com/",
   },
   {
     title: "Car Rental Website for North-East India",
