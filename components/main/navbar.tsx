@@ -11,11 +11,11 @@ export const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
       {/* Navbar Container */}
-      <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
+      <div className="max-w-7xl mx-auto w-full h-full flex items-center justify-between">
         {/* Logo + Name */}
         <Link
           href="#about-me"
-          className="flex items-center"
+          className="flex items-center shrink-0"
         >
           <Image
             src="/logo.png"
@@ -25,33 +25,33 @@ export const Navbar = () => {
             draggable={false}
             className="cursor-pointer"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300"><b>Sumar Pohz</b></div>
+          <div className="hidden md:flex font-bold ml-[10px] text-gray-300"><b>Sumar Pohz</b></div>
         </Link>
 
         {/* Web Navbar */}
-        <div className="hidden md:flex w-[500px] h-full flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border-[rgba(112,66,248,0.38)] bg-[rgba(3,0,20,0.37)] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+        <div className="hidden md:flex flex-1 justify-center">
+          <div className="flex items-center gap-x-5 border border-[rgba(112,66,248,0.38)] bg-[rgba(3,0,20,0.37)] px-6 py-2.5 rounded-full text-gray-200 text-sm">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.title}
                 href={link.link}
-                className="cursor-pointer hover:text-[rgb(252,244,1)] transition text-center"
+                className="cursor-pointer hover:text-[rgb(252,244,1)] transition whitespace-nowrap"
               >
                 {link.title}
               </a>
             ))}
             <Link
-                href="https://smraistudio.sumarpohz.com/"
-                target="_blank"
-                className="ml-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-sm font-medium hover:opacity-90 transition"
-              >
-                SmrAI Studio
-              </Link>
+              href="https://smraistudio.sumarpohz.com/"
+              target="_blank"
+              className="px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 text-white font-medium hover:opacity-90 transition whitespace-nowrap"
+            >
+              SmrAI Studio
+            </Link>
             {/* Source Code */}
             <Link
               href="https://github.com/SumarPohz/space-portfolio-next"
               target="_blank"
-              className="cursor-pointer hover:text-[rgb(252,248,4)] transition text-center"
+              className="cursor-pointer hover:text-[rgb(252,248,4)] transition whitespace-nowrap"
             >
               Source Code
             </Link>
@@ -59,7 +59,7 @@ export const Navbar = () => {
         </div>
 
         {/* Social Icons (Web) */}
-        <div className="hidden md:flex flex-row gap-5">
+        <div className="hidden md:flex shrink-0 flex-row gap-5">
           {SOCIALS.map(({ link, name, icon: Icon }) => (
             <Link
               href={link}
@@ -102,7 +102,7 @@ export const Navbar = () => {
               className="px-4 py-2 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500 text-white text-center font-medium"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              ResuCV
+              SmrAI Studio
             </Link>
             <Link
               href="https://github.com/SumarPohz/space-portfolio-next"

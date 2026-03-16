@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig: Metadata = {
   title: "Sumar Pohz | Full Stack Developer & SaaS Builder",
   description:
-    "Full Stack Developer building modern web apps, AI-powered tools, and scalable SaaS products like ResuCV.",
+    "Full Stack Developer building modern web apps, AI-powered tools, and scalable SaaS products like SmrAI Studio.",
   keywords: [
     "Sumar Pohz",
     "Full Stack Developer",
@@ -19,7 +19,6 @@ export const siteConfig: Metadata = {
     "AI tools",
     "SaaS",
     "Resume Builder",
-    "ResuCV",
     "SmrAI-Studio",
     "Portfolio",
     "Software Engineer",
