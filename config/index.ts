@@ -29,4 +29,7 @@ export const siteConfig: Metadata = {
       url: "https://github.com/SumarPohz",
     },
   ],
+  other: {
+    "google-adsense-account": "ca-pub-2095675725023769",
+  },
 } as const;
