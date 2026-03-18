@@ -17,7 +17,7 @@ export const Footer = () => {
                 <Link
                   key={`${column.title}-${name}`}
                   href={link}
-                  target="_blank"
+                  target={link.startsWith("/") || link.startsWith("#") ? "_self" : "_blank"}
                   rel="noreferrer noopener"
                   className="flex flex-row items-center my-[15px]"
                 >

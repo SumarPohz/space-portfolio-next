@@ -352,6 +352,26 @@ export const FOOTER_DATA = [
       },
     ],
   },
+  {
+    title: "Legal",
+    data: [
+      {
+        name: "Privacy Policy",
+        icon: null,
+        link: "/privacy-policy",
+      },
+      {
+        name: "Terms of Service",
+        icon: null,
+        link: "/terms",
+      },
+      {
+        name: "Contact",
+        icon: null,
+        link: "/contact",
+      },
+    ],
+  },
 ] as const;
 
 export const NAV_LINKS = [
